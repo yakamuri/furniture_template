@@ -1,0 +1,405 @@
+/* breakpoints */
+
+/* colors */
+
+/* z-index levels */
+
+/* animation durations */
+
+/* ================= MIXINS ================= */
+
+/* ================= SPRITES ================= */
+
+/* line 1, ../sass/_setup/_main.scss */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #666666;
+}
+
+/* line 4, ../sass/_setup/_main.scss */
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+/* line 8, ../sass/_setup/_main.scss */
+
+body {
+	font-family: "HalisRBook",sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.35;
+	margin: 0;
+	background: #ffffff;
+	color: #666666;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* line 17, ../sass/_setup/_main.scss */
+
+img {
+	vertical-align: middle;
+}
+
+/* line 20, ../sass/_setup/_main.scss */
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+/* line 24, ../sass/_setup/_main.scss */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* line 28, ../sass/_setup/_main.scss */
+
+input[type="search"] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* line 31, ../sass/_setup/_main.scss */
+
+.invisible {
+	display: none;
+}
+
+/* line 34, ../sass/_setup/_main.scss */
+
+.clear {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+	overflow: hidden;
+	display: block;
+}
+
+/* line 42, ../sass/_setup/_main.scss */
+
+.rel {
+	position: relative;
+}
+
+/* line 45, ../sass/_setup/_main.scss */
+
+.rel_inline {
+	position: relative;
+	display: inline-block;
+}
+
+/* line 49, ../sass/_setup/_main.scss */
+
+.fleft {
+	float: left;
+}
+
+/* line 52, ../sass/_setup/_main.scss */
+
+.fright {
+	float: right;
+}
+
+/* FONTS */
+
+/* line 57, ../sass/_setup/_main.scss */
+
+body {
+	font-family: "HalisRBook",sans-serif;
+	font-weight: normal;
+}
+
+/* line 60, ../sass/_setup/_main.scss */
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'FlamaCondensed-Medium', sans-serif;
+	font-weight: normal;
+	color: #444444;
+}
+
+/* line 64, ../sass/_setup/_main.scss */
+
+h2,
+h3,
+h4 {
+	font-size: 2em;
+	line-height: 1.2;
+	margin-bottom: 0.75em;
+	text-transform: uppercase;
+}
+
+/* line 70, ../sass/_setup/_main.scss */
+
+h2 {
+	line-height: 0.92;
+	letter-spacing: 0;
+}
+
+/* line 74, ../sass/_setup/_main.scss */
+
+.main_pb20 {
+	padding-bottom: 20px;
+}
+
+/* line 77, ../sass/_setup/_main.scss */
+
+.main_pb25 {
+	padding-bottom: 25px;
+}
+
+/* line 80, ../sass/_setup/_main.scss */
+
+.main_pb30 {
+	padding-bottom: 30px;
+}
+
+/* line 83, ../sass/_setup/_main.scss */
+
+.main_pb40 {
+	padding-bottom: 40px;
+}
+
+/* line 86, ../sass/_setup/_main.scss */
+
+.main_pb50 {
+	padding-bottom: 50px;
+}
+
+/* line 89, ../sass/_setup/_main.scss */
+
+.main_pb55 {
+	padding-bottom: 55px;
+}
+
+/* line 92, ../sass/_setup/_main.scss */
+
+.main_pb60 {
+	padding-bottom: 60px;
+}
+
+/* line 95, ../sass/_setup/_main.scss */
+
+.main_pb70 {
+	padding-bottom: 70px;
+}
+
+/* line 98, ../sass/_setup/_main.scss */
+
+.main_pb75 {
+	padding-bottom: 75px;
+}
+
+/* line 102, ../sass/_setup/_main.scss */
+
+.main_pt20 {
+	padding-top: 20px;
+}
+
+/* line 105, ../sass/_setup/_main.scss */
+
+.main_pt25 {
+	padding-top: 25px;
+}
+
+/* line 108, ../sass/_setup/_main.scss */
+
+.main_pt30 {
+	padding-top: 30px;
+}
+
+/* line 111, ../sass/_setup/_main.scss */
+
+.main_pt40 {
+	padding-top: 40px;
+}
+
+/* line 114, ../sass/_setup/_main.scss */
+
+.main_pt50 {
+	padding-top: 50px;
+}
+
+/* line 117, ../sass/_setup/_main.scss */
+
+.main_pt55 {
+	padding-top: 55px;
+}
+
+/* line 120, ../sass/_setup/_main.scss */
+
+.main_pt60 {
+	padding-top: 60px;
+}
+
+/* line 123, ../sass/_setup/_main.scss */
+
+.main_pt70 {
+	padding-top: 70px;
+}
+
+/* line 126, ../sass/_setup/_main.scss */
+
+.main_pt75 {
+	padding-top: 75px;
+}
+
+/* line 130, ../sass/_setup/_main.scss */
+
+.main_ps10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* line 134, ../sass/_setup/_main.scss */
+
+.main_narrow_width {
+	width: 100%;
+	max-width: 647px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* line 140, ../sass/_setup/_main.scss */
+
+.main_wrap {
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* line 1, ../sass/_setup/_buttons.scss */
+
+a.f_btn,
+.f_btn {
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 1em;
+	padding: 0 1em;
+	background: #c11a2c;
+	color: #ffffff;
+	border: 0;
+	height: 42px;
+	line-height: 42px;
+	min-width: 156px;
+	text-transform: uppercase;
+	text-align: left;
+	display: inline-block;
+	padding-right: 50px;
+	font-family: 'FlamaCondensed-Basic', sans-serif;
+	font-weight: normal;
+	position: relative;
+	overflow: hidden;
+}
+
+/* line 23, ../sass/_setup/_buttons.scss */
+
+a.f_btn:after,
+.f_btn:after {
+	display: block;
+	content: ' ';
+	background-image: url("../images/sprites.png");
+	background-size: 50px auto;
+	background-position: 0 0;
+	width: 11px;
+	height: 18px;
+	position: absolute;
+	top: 12px;
+	right: 9px;
+}
+
+/* line 31, ../sass/_setup/_buttons.scss */
+
+a.f_btn:before,
+.f_btn:before {
+	display: block;
+	content: ' ';
+	position: absolute;
+	left: 10px;
+	top: 0;
+	width: 120%;
+	height: 100%;
+	background: #ffffff;
+	-moz-transform: translate(100%, 0) skew(-20deg, 0);
+	-ms-transform: translate(100%, 0) skew(-20deg, 0);
+	-webkit-transform: translate(100%, 0) skew(-20deg, 0);
+	transform: translate(100%, 0) skew(-20deg, 0);
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+	opacity: 0.3;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	-moz-transition-property: -moz-transform, opacity;
+	-o-transition-property: -o-transform, opacity;
+	-webkit-transition-property: -webkit-transform, opacity;
+	transition-property: transform, opacity;
+}
+
+/* line 44, ../sass/_setup/_buttons.scss */
+
+a.f_btn:hover:before,
+.f_btn:hover:before {
+	-moz-transform: translate(-15%, 0) skew(-20deg, 0);
+	-ms-transform: translate(-15%, 0) skew(-20deg, 0);
+	-webkit-transform: translate(-15%, 0) skew(-20deg, 0);
+	transform: translate(-15%, 0) skew(-20deg, 0);
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+	opacity: 0.1;
+}
+
+@media only screen and (max-width: 767px) {
+
+/* line 147, ../sass/_setup/_main.scss */
+
+.hidden-xs {
+	display: none;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+/* line 152, ../sass/_setup/_main.scss */
+
+.main_pt75 {
+	padding-top: 50px;
+}
+
+/* line 155, ../sass/_setup/_main.scss */
+
+.main_pb60,
+.main_pb50 {
+	padding-bottom: 20px;
+}
+
+}
+

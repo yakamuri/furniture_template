@@ -1,0 +1,159 @@
+html,button,input,select,textarea {
+  color: $colorText;
+}
+html {
+  height:100%;
+  overflow-y:scroll;
+}
+body {
+  @include fontNormal();
+  font-size: 1em;
+  line-height: 1.35;
+  margin:0;
+  background:#ffffff;
+  color:$colorText;
+  @include box-sizing(content-box);
+}
+img {
+  vertical-align: middle;
+}
+p,ul,ol,h1,h2,h3,h4  {
+  margin:0;
+  padding:0;
+}
+* {
+  @include box-sizing(border-box);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input[type="search"] {
+  @include box-sizing(border-box);
+}
+.invisible {
+  display:none;
+}
+.clear {
+  clear:both;
+  font-size:0;
+  line-height:0;
+  height:0;
+  overflow:hidden;
+  display:block;
+}
+.rel {
+  position:relative;
+}
+.rel_inline {
+  position:relative;
+  display:inline-block;
+}
+.fleft {
+  float:left;
+}
+.fright {
+  float:right;
+}
+
+/* FONTS */
+body {
+  @include fontNormal();
+}
+h1,h2,h3,h4 {
+  @include fontBrand();
+  color:#444444;
+}
+h2,h3,h4 {
+  font-size:2em;
+  line-height:1.2;
+  margin-bottom:0.75em;
+  text-transform:uppercase;
+}
+h2 {
+  line-height:0.92;
+  letter-spacing:0;
+}
+.main_pb20 {
+  padding-bottom:20px;
+}
+.main_pb25 {
+  padding-bottom:25px;
+}
+.main_pb30 {
+  padding-bottom:30px;
+}
+.main_pb40 {
+  padding-bottom:40px;
+}
+.main_pb50 {
+  padding-bottom:50px;
+}
+.main_pb55 {
+  padding-bottom:55px;
+}
+.main_pb60 {
+  padding-bottom:60px;
+}
+.main_pb70 {
+  padding-bottom:70px;
+}
+.main_pb75 {
+  padding-bottom:75px;
+}
+
+.main_pt20 {
+  padding-top:20px;
+}
+.main_pt25 {
+  padding-top:25px;
+}
+.main_pt30 {
+  padding-top:30px;
+}
+.main_pt40 {
+  padding-top:40px;
+}
+.main_pt50 {
+  padding-top:50px;
+}
+.main_pt55 {
+  padding-top:55px;
+}
+.main_pt60 {
+  padding-top:60px;
+}
+.main_pt70 {
+  padding-top:70px;
+}
+.main_pt75 {
+  padding-top:75px;
+}
+
+.main_ps10 {
+  padding-left:10px;
+  padding-right:10px;
+}
+.main_narrow_width {
+  width:100%;
+  max-width:647px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.main_wrap {
+  max-width:1920px;
+  min-width:320px;
+  margin:0 auto;
+  overflow:hidden;
+}
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+    display:none;
+  }
+}
+@media only screen and (max-width: $for_mobile) {
+  .main_pt75 {
+    padding-top:50px;
+  }
+  .main_pb60,
+  .main_pb50 {
+    padding-bottom:20px;
+  }
+}

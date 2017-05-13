@@ -1,0 +1,79 @@
+/* breakpoints */
+$for_laptop:				1440px;
+$for_below_laptop:			1359px;
+$for_tablet:				1024px;
+$for_tablet_portrait:		1000px;
+$for_tablet_portrait_bootstrap: 768px;
+$for_mobile:		 		 640px;
+$for_mobile_portrait:		 500px;
+$for_mobile_iphone: 		 380px;
+
+/* colors */
+$colorText: 				#666666;
+$colorBrand:				#c11a2c;
+$colorBrandHighlight:		#71b9b8;
+$colorBrandLight:			#b3afa9;
+$colorBrandHover:			red;
+$colorHoverBg:				#8d8d8d;
+
+/* z-index levels */
+$zindex_background:	 	10;
+$zindex_anim_elem:		50;
+$zindex_content:		100;
+$zindex_sticky:			200;
+$zindex_overlay:		300;
+
+/* animation durations */
+$hover_light: 0.2s;
+$hover_medium: 0.6s;
+
+
+/* ================= MIXINS ================= */
+@mixin pseudoElement() {
+	display:block;
+	content: ' ';
+}
+@mixin fontBrand {
+	font-family: 'FlamaCondensed-Medium', sans-serif;
+	font-weight:normal;
+}
+@mixin fontNormal {
+	font-family:"HalisRBook",sans-serif;
+	font-weight:normal;
+}
+@mixin fontBold {
+	font-family:"Open Sans Bold","Open Sans",Arial,sans-serif;
+	font-weight:700;
+}
+
+@mixin fontLight {
+	font-family: 'FlamaCondensed-Basic', sans-serif;
+	font-weight:normal;
+}
+@mixin fontArial {
+	font-family:Arial,sans-serif;
+	font-weight:normal;
+}
+@mixin font-smoothing($value: on) {
+	@if $value == on {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	@else {
+		-webkit-font-smoothing: subpixel-antialiased;
+		-moz-osx-font-smoothing: auto;
+	}
+}
+
+/* ================= SPRITES ================= */
+@mixin sprite($name) {
+	background-image:url('../images/sprites.png');
+	background-size:50px auto;
+	@if $name == arrow_right {
+		background-position:0 0;
+	} @else if $name == checkmark {
+		background-position:0px -50px;
+	} @else {
+		background-position:0 0;
+	}
+}

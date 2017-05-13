@@ -1,0 +1,49 @@
+a.f_btn,
+.f_btn {
+  -webkit-appearance:none;
+  @include box-sizing(border-box);
+  @include border-radius(5px);
+  font-size:1em;
+  padding: 0 1em;
+  background:$colorBrand;
+  color:#ffffff;
+  border:0;
+  height:42px;
+  line-height:42px;
+  min-width:156px;
+  text-transform:uppercase;
+  text-align:left;
+  display:inline-block;
+  padding-right:50px;
+
+  @include fontLight();
+  position:relative;
+  overflow:hidden;
+
+  &:after {
+    @include pseudoElement();
+    @include sprite(arrow_right);
+    width:11px;height:18px;
+    position:absolute;
+    top:12px;right:9px;
+  }
+
+  &:before {
+    @include pseudoElement();
+    position:absolute;
+    left:10px;
+    top:0;
+    width:120%;height:100%;
+    background:#ffffff;
+    @include transform(translate(100%,0) skew(-20deg,0));
+    @include opacity(0.3);
+    @include transition-duration(0.4s);
+    @include transition-property(transform,opacity);
+  }
+  &:hover {
+    &:before {
+      @include transform(translate(-15%,0) skew(-20deg,0));
+      @include opacity(0.1);
+    }
+  }
+}
