@@ -1,0 +1,97 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.swiper-wrapper {
+  box-sizing: content-box;
+  @include display-flex;
+  height: 100%;
+  position: relative;
+  @include transition-property(transform);
+  width: 100%;
+  z-index: 1;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  height: 420px;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0.3s ease 0s;
+  z-index: 10;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 100%;
+  display: inline-block;
+  height: 8px;
+  opacity: 0.2;
+  width: 8px;
+
+  &.swiper-pagination-bullet-active {
+    background: #007aff none repeat scroll 0 0;
+    opacity: 1;
+  }
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%20viewBox%3D\'0%200%2027%2044\'%3E%3Cpath%20d%3D\'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z\'%20fill%3D\'%23007aff\'%2F%3E%3C%2Fsvg%3E");
+  left: auto;
+  right: 10px;
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%20viewBox%3D\'0%200%2027%2044\'%3E%3Cpath%20d%3D\'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z\'%20fill%3D\'%23007aff\'%2F%3E%3C%2Fsvg%3E");
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 27px 44px;
+  cursor: pointer;
+  height: 44px;
+  margin-top: -22px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 10;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  cursor: auto;
+  opacity: 0.35;
+  pointer-events: none;
+}

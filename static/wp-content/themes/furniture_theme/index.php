@@ -6,14 +6,23 @@
 
 		while( have_posts() ): the_post(); ?>
 
-<h3><?php the_title(); ?></h3>
-<small>Posted on: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in <?php the_category(); ?></small>
+		<div class="row">
 
-<p><?php the_content(); ?></p>
+			<div class="col-xs-12 col-sm-2 mobile-nav">
 
-<hr>
+				<?php get_template_part('template_parts/menu'); ?>
 
-<?php endwhile;
+			</div>
+
+			<div class="col-xs-12 col-sm-10">
+				<?php get_template_part('template_parts/slider'); ?>
+
+				<div class="text">
+					<?php the_content(); ?>
+				</div>
+
+
+		<?php endwhile;
 
 	endif;
 

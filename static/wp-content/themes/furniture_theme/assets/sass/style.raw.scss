@@ -7,4 +7,10 @@
 @import '_setup/_main';
 @import '_setup/_buttons';
 
-@import '_block/_block_content';
+@import '_vendor/_bootstrap';
+
+@import '_block/_block_menu';
+@import '_block/_block_slider';
+@import '_block/_block_products';
+@import '_block/_block_contact';
+@import '_block/_block_text';

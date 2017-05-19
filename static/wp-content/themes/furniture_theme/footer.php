@@ -1,9 +1,12 @@
-<footer>
-    <p>This is my footer</p>
-    <?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
-</footer>
+                <div class="clear"></div>
+                <footer>
+                    <p>This is my footer</p>
+                </footer>
+                <?php wp_footer(); ?>
+            </div>
+        </div>
 
-<?php wp_footer(); ?>
+        </div>
 
 </body>
 </html>
