@@ -1,0 +1,27 @@
+.menu {
+  ul {
+    li {
+      list-style: none;
+
+      a {
+        @include fontLato();
+        font-size: 0.875em;
+        color: $colorGrey;
+        text-decoration: none;
+        display: block;
+        line-height: 2.14;
+
+        &:hover {
+          text-decoration: none;
+          @include transform(scale(1,1));
+          @include transition-duration(0.5s);
+          @include transition-property(transform);
+        }
+      }
+
+      &:nth-of-type(4){
+        padding-top: 20px;
+      }
+    }
+  }
+}

@@ -1,31 +1,38 @@
 <?php get_header(); ?>
 
-<?php
+<section class="middle">
 
-	if( have_posts() ):
+<div class="row">
 
-		while( have_posts() ): the_post(); ?>
+	<div class="col-xs-12 col-sm-2 mobile-nav">
 
-		<div class="row">
+		<?php get_template_part('template_parts/menu'); ?>
 
-			<div class="col-xs-12 col-sm-2 mobile-nav">
+	</div>
 
-				<?php get_template_part('template_parts/menu'); ?>
+	<div class="col-xs-12 col-sm-10 slider">
+		<?php get_template_part('template_parts/slider'); ?>
 
-			</div>
+		<?php
 
-			<div class="col-xs-12 col-sm-10">
-				<?php get_template_part('template_parts/slider'); ?>
+			if( have_posts() ):
 
-				<div class="text">
-					<?php the_content(); ?>
-				</div>
+				while( have_posts() ): the_post(); ?>
 
 
-		<?php endwhile;
+						<div class="text">
+							<?php the_content(); ?>
+						</div>
 
-	endif;
 
-	?>
+				<?php endwhile;
+
+			endif;
+
+			?>
+	</div>
+	<div class="clear"></div>
+</section>
+
 
 <?php get_footer(); ?>

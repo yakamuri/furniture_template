@@ -15,6 +15,11 @@ $colorBrandHighlight:		#71b9b8;
 $colorBrandLight:			#b3afa9;
 $colorBrandHover:			red;
 $colorHoverBg:				#8d8d8d;
+$colorWhite:				#ffffff;
+$colorBlack:				#000000;
+$colorGrey: 				#6f6f6f;
+
+
 
 /* z-index levels */
 $zindex_background:	 	10;
@@ -54,6 +59,11 @@ $hover_medium: 0.6s;
 	font-family:Arial,sans-serif;
 	font-weight:normal;
 }
+@mixin fontLato {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
 @mixin font-smoothing($value: on) {
 	@if $value == on {
 		-webkit-font-smoothing: antialiased;

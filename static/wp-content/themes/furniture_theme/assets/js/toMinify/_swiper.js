@@ -7,7 +7,6 @@ var customSwiper = (function(){
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev'
         });
-        console.log('aici');
     }
 
     function init() {
