@@ -1,0 +1,98 @@
+.block-product {
+  position: relative;
+  margin-bottom: 1.25em;
+
+  &--image {
+
+    img {
+      width: 100%;
+      height: auto;
+      @include transition-property(all);
+      @include transition-timing-function(ease-out);
+
+      &.show {
+        display: block;
+      }
+      &.hover {
+        display: none;
+        @include transform(scale(0));
+        @include opacity(0);
+        @include transition(transform, opacity);
+        @include transition-duration(.5s);
+        @include transition-timing-function(ease-in-out);
+      }
+    }
+
+    &:hover {
+      img.hover {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        min-height: 195px;
+        width: auto;
+        max-width: 279px;
+        @include transform(scale(1));
+        @include opacity(1);
+        @include animation-name(anim);
+        @include animation-duration(.5s);
+        @include animation-timing-function(ease-in-out);
+
+        @include keyframes(anim) {
+          0% {
+            display: none;
+            @include opacity(0);
+          }
+          1% {
+            display: block;
+            @include opacity(0);
+            @include transform(scale(0));
+          }
+          100% {
+            @include opacity(1);
+            @include transform(scale(1));
+          }
+        }
+      }
+      img.show {
+
+      }
+    }
+  }
+  &--text {
+    text-align: center;
+    h5 {
+
+      a {
+        text-decoration: none;
+        color: $colorBlack;
+        font-size: 110%;
+        font-weight: bold;
+      }
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 90%;
+      color: $colorText;
+    }
+
+  }
+}
+
+@media screen and (max-width: $bootstrap_sm){
+  .block-product {
+    &--image {
+
+        &:hover {
+
+          img.hover {
+            width: 100%;
+            height: auto;
+            max-width: none;
+            min-height: auto;
+          }
+        }
+    }
+  }
+}

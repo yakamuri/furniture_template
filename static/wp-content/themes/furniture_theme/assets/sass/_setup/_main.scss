@@ -6,7 +6,7 @@ html {
   overflow-y:scroll;
 }
 body {
-  @include fontNormal();
+  @include fontLato();
   font-size: 1em;
   line-height: 1.35;
   margin:0;
@@ -58,11 +58,11 @@ input[type="search"] {
 
 /* FONTS */
 body {
-  @include fontNormal();
+  @include fontLato();
 }
 h1,h2,h3,h4 {
-  @include fontBrand();
-  color:#444444;
+  @include fontLato();
+  color:#000000;
 }
 h2,h3,h4 {
   font-size:2em;
@@ -146,12 +146,15 @@ h2 {
   margin:0 auto;
   overflow:hidden;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $bootstrap_sm) {
   .hidden-xs {
     display:none;
   }
+  header {
+    max-height: 30px;
+  }
 }
-@media only screen and (max-width: $for_mobile) {
+@media only screen and (max-width: $bootstrap_xs) {
   .main_pt75 {
     padding-top:50px;
   }

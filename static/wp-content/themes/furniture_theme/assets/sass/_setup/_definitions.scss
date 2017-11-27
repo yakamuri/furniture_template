@@ -1,24 +1,16 @@
 /* breakpoints */
-$for_laptop:				1440px;
-$for_below_laptop:			1359px;
-$for_tablet:				1024px;
-$for_tablet_portrait:		1000px;
-$for_tablet_portrait_bootstrap: 768px;
-$for_mobile:		 		 640px;
-$for_mobile_portrait:		 500px;
-$for_mobile_iphone: 		 380px;
+$laptop:					1600px;
+$bootstrap_xlg:				1281px;
+$bootstrap_lg:				1199px;
+$bootstrap_md:				 991px;
+$bootstrap_sm: 		 		 767px;
+$bootstrap_xs:		 		 575px;
+$bootstrap_xxs:				 440px;
 
 /* colors */
-$colorText: 				#666666;
-$colorBrand:				#c11a2c;
-$colorBrandHighlight:		#71b9b8;
-$colorBrandLight:			#b3afa9;
-$colorBrandHover:			red;
-$colorHoverBg:				#8d8d8d;
+$colorText: 				#6f6f6f;
 $colorWhite:				#ffffff;
 $colorBlack:				#000000;
-$colorGrey: 				#6f6f6f;
-
 
 
 /* z-index levels */
@@ -38,52 +30,8 @@ $hover_medium: 0.6s;
 	display:block;
 	content: ' ';
 }
-@mixin fontBrand {
-	font-family: 'FlamaCondensed-Medium', sans-serif;
-	font-weight:normal;
-}
-@mixin fontNormal {
-	font-family:"HalisRBook",sans-serif;
-	font-weight:normal;
-}
-@mixin fontBold {
-	font-family:"Open Sans Bold","Open Sans",Arial,sans-serif;
-	font-weight:700;
-}
 
-@mixin fontLight {
-	font-family: 'FlamaCondensed-Basic', sans-serif;
-	font-weight:normal;
-}
-@mixin fontArial {
-	font-family:Arial,sans-serif;
-	font-weight:normal;
-}
 @mixin fontLato {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-}
-
-@mixin font-smoothing($value: on) {
-	@if $value == on {
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-	@else {
-		-webkit-font-smoothing: subpixel-antialiased;
-		-moz-osx-font-smoothing: auto;
-	}
-}
-
-/* ================= SPRITES ================= */
-@mixin sprite($name) {
-	background-image:url('../images/sprites.png');
-	background-size:50px auto;
-	@if $name == arrow_right {
-		background-position:0 0;
-	} @else if $name == checkmark {
-		background-position:0px -50px;
-	} @else {
-		background-position:0 0;
-	}
 }

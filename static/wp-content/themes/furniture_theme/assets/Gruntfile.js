@@ -34,7 +34,9 @@ module.exports = function(grunt) {
                 files: {
                     'js/app.min.js': [
                         'js/toMinify/_resize.js',
+                        'js/toMinify/_main.js',
                         'js/toMinify/_swiper.js'
+
                     ]
                 }
             },
